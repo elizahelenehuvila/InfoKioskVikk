@@ -15,7 +15,7 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
-namespace InfoKioskVikk
+namespace InfoKioskVIKK
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
@@ -27,12 +27,12 @@ namespace InfoKioskVikk
             this.InitializeComponent();
         }
 
-        private void IconsListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void hamburgerButton_Click(object sender, RoutedEventArgs e)
         {
-
+            MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
         }
 
-        private void HamburgerButton_Click(object sender, RoutedEventArgs e)
+        private void IconsListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }
